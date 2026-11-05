@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Quote - Asif</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        .quote-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            padding: 50px 40px;
+            max-width: 650px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .quote-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .quote-mark {
+            font-size: 6rem;
+            font-family: 'Playfair Display', serif;
+            color: rgba(0, 210, 211, 0.3);
+            line-height: 0;
+            position: absolute;
+            top: 40px;
+            left: 30px;
+            user-select: none;
+        }
+
+        .quote-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.45rem;
+            font-style: italic;
+            line-height: 1.8;
+            color: #f1f2f6;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .author {
+            font-size: 1.1rem;
+            font-weight: 500;
+            letter-spacing: 3px;
+            color: #00d2d3;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        .author::before {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: #00d2d3;
+            margin: 0 auto 12px auto;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="quote-card">
+        <div class="quote-mark">“</div>
+        <p class="quote-text">
+            Do not measure your growth by how close you are to the destination, but by how far you have walked from where you once stood.
+        </p>
+        <div class="author">Asif</div>
+    </div>
+
+</body>
+</html>
